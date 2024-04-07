@@ -6,3 +6,12 @@ body {
     margin:0;
     padding: 0;
 }
+//--> Sticky navigation for desktop version <---
+.sitcky {
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+.sticky + .contnet {
+    padding-top: 60px;
+}
