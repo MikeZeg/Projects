@@ -10,8 +10,8 @@
 <body>
 
     <!-- To DO list -->
-<!-- Add meta tags in head -->
-<!-- Check if can use div class='page header text' -->
+<!-- Add meta tags in head to better SEO concrete, building, hire pump, concrete pump, plant remove, soil remove, -->
+<!-- Check if can use div class='page header text' (*) against h1 -->
 <!-- Add sticky navigation - _GLOBAL already created  -->
 
 <!-- Header -->
@@ -81,7 +81,7 @@
             
             <div class="main__services__img">
                 <div class="main__services__img__items">
-                    <div class="main__services__img__items__concrete__works">
+                    <div class="main__services__img__items__concrete__works box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Concrete Works</div>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="main__services__img__items__ground__drainage">
+                    <div class="main__services__img__items__ground__drainage box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Ground & Drainage</div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="main__services__img__items__pumpHire">
+                    <div class="main__services__img__items__pumpHire box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Concrete Pump Hire</div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="main__services__img__items__planHire">
+                    <div class="main__services__img__items__planHire box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Plant & Grab Hire</div>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="main__services__img__items__labour">
+                    <div class="main__services__img__items__labour box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Labour Supply</div>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="main__services__img__items__imprinted">
+                    <div class="main__services__img__items__imprinted box">
                         <div class="img">
                             <div class="text">
                                 <div class="title">Imprinted Concrete</div>
@@ -138,24 +138,50 @@
                 </div>
 
                 <div class="main__services__img__contact">
+                    <!-- Contact FORM -->
                     <div class="main__services__img__contact__form">
+                        <form action="action">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstname" placeholder="Please add name.." required />
 
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastname" placeholder="Please add surname.."required />
+
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="companyname" placeholder="Company Name - optional"/>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email - optional"/>
+
+                            <label for="phone"> Contact Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Contact Number" pattern="[0-9]{11}" required />
+
+                            <label for="service"></label>
+
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Please send you query"
+                            style="height: 150px; width: 100%;"
+                            ></textarea>
+
+                            <input type="submit">
+                        </form>
                     </div>
+
                     <div class="main__services__img__contact__accreditations ">
                         <div class="accredit__images">
-                            <div class="accredit__img" style="background-image: none;"></div>
+                            <div class="accredit__img accredImage" style="background-image: none;"></div>
                             
-                            <div class="accredit__img"></div>
+                            <div class="accredit__img accredImage"></div>
                             
-                            <div class="accredit__img"></div>
+                            <div class="accredit__img accredImage"></div>
                             
-                            <div class="accredit__img"></div>
+                            <div class="accredit__img accredImage"></div>
 
-                            <div class="accredit__img"></div>
+                            <div class="accredit__img accredImage"></div>
                             
-                            <div class="accredit__img"></div>
+                            <div class="accredit__img accredImage"></div>
                         </div>
-                        <div>Our Accreditations</div>
+                        <div class="main__services__img__contact__footer">Our Accreditations</div>
                     </div>
 
                 </div>

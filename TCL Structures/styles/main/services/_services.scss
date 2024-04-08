@@ -1,0 +1,58 @@
+// ---->Full Section<-----
+.main__services {
+    color: red;
+}
+// ------> First part / TOP PART <-------
+.main__services__description {
+    color: blue;
+}
+.main__services__img {
+    background-color: hsla(0, 15%, 28%, 0.731);
+
+    &__items {
+        color: lightcoral;
+        padding-top: 1.5rem;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 3rem;
+    }
+    .box {
+        border: 1px black solid;
+        width: 200px;
+        height: 300px;
+
+    }
+}
+.main__services__img__contact {
+    background-color: rgba(145, 196, 212, 0.702);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+
+    .accredImage {
+        width: 200px;
+        height: 100px;
+    }
+
+    &__footer {
+        font-size: 2rem;
+        color: $secondColor;
+
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        justify-content: center;
+
+        transition: all 0.5s ease-in 0s; 
+
+        &:hover {
+            color: $thirdColor;
+            color: hsl(51, 47%, 38%);
+            transition: all 0.5s ease-in 0s;
+        }
+    }
+}
