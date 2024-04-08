@@ -33,6 +33,18 @@
     justify-content: center;
     gap: 3rem;
 
+    &__form{
+        
+        input[type=text], select,textarea {
+            width: 100%;
+            padding: 5px;
+            color: $primaryColor;
+            resize: vertical;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    }
 
     .accredImage {
         width: 200px;
