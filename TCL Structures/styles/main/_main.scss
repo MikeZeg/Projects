@@ -7,3 +7,19 @@ h1 {
 h2 {
     font-size: 1rem;
 }
+// Extra paragraph
+strong {
+    margin-left: 1.5rem;
+   }
+.accredit__img {
+
+    height: 100px;
+    width: 100px;
+    border: 1px white solid;
+}
+.accredit__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border: 1px red solid;
+}

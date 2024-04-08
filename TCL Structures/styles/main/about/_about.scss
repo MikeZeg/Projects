@@ -1,0 +1,52 @@
+.main__about {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+}
+.main__about__content {
+    color: black;
+    width: 50%;
+
+    
+
+    margin-left: 2rem;
+
+    border: 1px blue solid;
+
+    h1 {
+        margin-left: 2rem;
+
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    p {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        
+        font-size: 2.5rem;
+    }
+
+    &__article {
+        border: 1px red solid;
+        // width: 80%;
+
+       color: blue;
+// Margin biger when resolution incresses
+        margin:0;
+        margin-left: 3rem;
+        margin-right: 1rem;
+       
+       font-size: 1.3rem;
+
+    }
+}
+.main__about__imgs {
+    width: 50%;
+    height: 100%;
+    
+    background-image: url('');
+
+    border: 1px red solid;
+}
