@@ -5,6 +5,33 @@
 // ------> First part / TOP PART <-------
 .main__services__description {
     color: blue;
+
+    p {
+        color: black;
+        display: flex;
+        justify-content: center;
+
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin:0;
+        padding: 1rem;
+    }
+    .call__us {
+        display: flex;
+        justify-content: center;
+
+        h2{
+          color: black;  
+        }
+
+        button {
+            margin-left: auto;
+            margin-right: 0;
+            width: 10%;
+        }
+    }
+
+
 }
 .main__services__img {
     background-color: hsla(0, 15%, 28%, 0.731);
@@ -12,15 +39,16 @@
     &__items {
         color: lightcoral;
         padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr;
         justify-items: center;
         row-gap: 3rem;
     }
     .box {
         border: 1px black solid;
-        width: 200px;
+        width: 250px;
         height: 300px;
 
     }
@@ -34,15 +62,49 @@
     gap: 3rem;
 
     &__form{
+
+        width: 40%;
+        margin-top:1rem;
+        
         
         input[type=text], select,textarea {
             width: 100%;
             padding: 5px;
-            color: $primaryColor;
+            color: black;
             resize: vertical;
             box-sizing: border-box;
             border-radius: 5px;
             margin: 5px;
+        }
+        input[type=email]{
+            width: 100%;
+            color: black;
+            padding: 5px;
+            resize: vertical;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        input[type=tel] {
+            color:black;
+            padding: 5px;
+            resize: vertical;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        input[type=submit] {
+            display: flex;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        textarea {
+            color:black;
+
+        }
+        label {
+            margin-left: 10px;
+            color: black;
         }
     }
 

@@ -184,6 +184,27 @@ strong {
 .main__services__description {
   color: blue;
 }
+.main__services__description p {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 1rem;
+}
+.main__services__description .call__us {
+  display: flex;
+  justify-content: center;
+}
+.main__services__description .call__us h2 {
+  color: black;
+}
+.main__services__description .call__us button {
+  margin-left: auto;
+  margin-right: 0;
+  width: 10%;
+}
 
 .main__services__img {
   background-color: hsla(0, 15%, 28%, 0.731);
@@ -191,14 +212,15 @@ strong {
 .main__services__img__items {
   color: lightcoral;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   justify-items: center;
   row-gap: 3rem;
 }
 .main__services__img .box {
   border: 1px black solid;
-  width: 200px;
+  width: 250px;
   height: 300px;
 }
 
@@ -209,14 +231,47 @@ strong {
   justify-content: center;
   gap: 3rem;
 }
+.main__services__img__contact__form {
+  width: 40%;
+  margin-top: 1rem;
+}
 .main__services__img__contact__form input[type=text], .main__services__img__contact__form select, .main__services__img__contact__form textarea {
   width: 100%;
   padding: 5px;
-  color: hsl(206, 76%, 42%);
+  color: black;
   resize: vertical;
   box-sizing: border-box;
   border-radius: 5px;
   margin: 5px;
+}
+.main__services__img__contact__form input[type=email] {
+  width: 100%;
+  color: black;
+  padding: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px;
+}
+.main__services__img__contact__form input[type=tel] {
+  color: black;
+  padding: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px;
+}
+.main__services__img__contact__form input[type=submit] {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+.main__services__img__contact__form textarea {
+  color: black;
+}
+.main__services__img__contact__form label {
+  margin-left: 10px;
+  color: black;
 }
 .main__services__img__contact .accredImage {
   width: 200px;

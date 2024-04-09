@@ -74,9 +74,11 @@
             <div class="main__services__description">
 <!-- ?? change p to <div class="page header text"> -->
                 <p>Our Services</p>
-                <h2>Building Dreams with TCL Structures</h2>
-                <button id="btn__callUs" class="main__services__description__btn btn__call__us">Call Us Today</button>
-                <div class="main__services__description__text description__text">TCL is your top choice for construction needs with expertise in concrete works, ground and drainage projects, skilled workers, and concrete pump hire services. We ensure top-notch quality and timely completion of projects, providing exceptional value to every client. Our dedicated team delivers professional results, making TCL the ideal partner for all your construction requirements.</p>
+                <div class="call__us">
+                    <h2>Building Dreams with TCL Structures</h2>
+                    <button id="btn__callUs" class="main__services__description__btn btn__call__us">Call Us Today</button>
+                </div>
+                <div class="main__services__description__text description__text">TCL is your top choice for construction needs with expertise in concrete works, ground and drainage projects, skilled workers, and concrete pump hire services. We ensure top-notch quality and timely completion of projects, providing exceptional value to every client. Our dedicated team delivers professional results, making TCL the ideal partner for all your construction requirements.</div>
             </div>
             
             <div class="main__services__img">
@@ -139,7 +141,7 @@
 
                 <div class="main__services__img__contact">
                     <!-- Contact FORM -->
-                    <div class="main__services__img__contact__form">
+                    <div class="main__services__img__contact__form contactForm">
                         <form action="action">
                             <label for="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstname" placeholder="Please add name.." required />
@@ -158,10 +160,9 @@
 
                             <label for="service"></label>
 
-                            <label for="subject">Message</label>
+                            <label for="subject" style="display: flex;">Message</label>
                             <textarea id="subject" name="subject" placeholder="Please send you query"
-                            style="height: 150px; width: 100%;">
-                            </textarea>
+                            style="height: 150px; width: 100%;"></textarea>
 
                             <input type="submit">
                         </form>
