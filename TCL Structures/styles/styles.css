@@ -27,12 +27,10 @@ body {
   height: 95%;
   margin-left: 10px;
   align-content: center;
-  border: 1px blue solid;
 }
 .header__logo img {
-  width: 100%;
+  width: 45%;
   height: 80%;
-  background-image: url("");
 }
 .header__nav {
   right: 0;
@@ -95,7 +93,8 @@ strong {
 .main__home {
   width: 100%;
   height: 750px;
-  background-color: gray;
+  background: url("../../../Images/background/background1.jpg");
+  background-size: auto;
 }
 .main__home__container {
   width: 40%;
@@ -103,6 +102,7 @@ strong {
   align-content: center;
   margin-left: 4rem;
   background-color: rgba(1, 1, 1, 0.3);
+  border: 1px solid hsl(10, 6%, 21%);
 }
 .main__home__container__text {
   margin-left: 2rem;
@@ -306,7 +306,7 @@ strong {
   transition: all 0.5s ease-in 0s;
 }
 .main__services__img__contact__footer:hover {
-  color: hsla(30, 71%, 50%, 0.997);
+  color: hsla(36, 68%, 51%, 0.997);
   color: hsl(51, 47%, 38%);
   transition: all 0.5s ease-in 0s;
 }
@@ -337,4 +337,226 @@ strong {
   width: 450px;
   height: 550px;
   border: 1px blue solid;
+}
+
+.main__client {
+  height: 42rem;
+  border: 1px solid red;
+  background-color: rgb(71, 66, 66);
+}
+
+.main__client__title {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 0.5rem 0 3rem 0;
+}
+
+.main__client__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.client__left {
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid red;
+}
+
+.client__middle {
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid red;
+}
+
+.client__right {
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid red;
+}
+
+.main__contact {
+  height: 1220px;
+  background-color: white;
+}
+
+.main__client__description {
+  margin: 0;
+}
+.main__client__description .contact__title {
+  font-size: 3rem;
+  margin: 1rem 0 1rem 3rem;
+}
+.main__client__description .contact__description {
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__contact__maps {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.main__contact__maps__first {
+  width: 450px;
+  height: 250px;
+  border: 1px solid yellow;
+}
+.main__contact__maps__second {
+  width: 450px;
+  height: 250px;
+  border: 1px solid pink;
+}
+
+.main__contact__info {
+  width: 100%;
+  height: 300px;
+}
+.main__contact__info .offices {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.main__contact__info .offices__hq__title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.main__contact__info .offices__hq__title p {
+  margin-left: 10px;
+  font-weight: 500;
+}
+.main__contact__info .offices__2branch__title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.main__contact__info .offices__2branch__title p {
+  margin-left: 10px;
+  font-weight: 500;
+}
+.main__contact__info .offices .office {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid white;
+  background-color: rgb(53, 51, 51);
+}
+
+.main__contact__info__coworkers {
+  border: 1px solid blue;
+  width: 80%;
+  margin: 1rem auto 1rem auto;
+  background-color: rgb(53, 51, 51);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+.main__contact__info__coworkers .coBox {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid yellow;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background-color: hsl(206, 76%, 42%);
+}
+
+.footer__client {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(206, 76%, 42%);
+}
+
+.footer__client__container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1.5rem;
+}
+.footer__client__container__contact {
+  border: 1px solid hsla(36, 68%, 51%, 0.997);
+  padding: 1rem;
+  transition: all 0.3s ease 0s;
+}
+.footer__client__container__contact a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.footer__client__container__contact .second {
+  display: none;
+}
+.footer__client__container__contact:hover {
+  cursor: pointer;
+  background-color: hsl(120, 2%, 62%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+.footer__client__container__contact:hover a {
+  color: hsl(206, 76%, 42%);
+  content: "??";
+}
+.footer__client__container__contact:hover .first {
+  display: none;
+}
+.footer__client__container__contact:hover .second {
+  display: block;
+}
+
+.footer__client__container__TCL {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.footer__client__container__TCL p {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.footer__websiteMap {
+  text-align: center;
+  font-size: 1.2rem;
+  height: 100%;
+}
+.footer__websiteMap p {
+  margin-top: 0;
+  padding-top: 0;
+}
+.footer__websiteMap a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+.footer__websiteMap a:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__websiteMap a:hover {
+  color: hsla(36, 68%, 51%, 0.997);
+}
+
+.footer__designer {
+  color: hsl(0, 0%, 100%);
+}
+.footer__designer__container {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.footer__designer__container a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.footer__designer__container a:hover {
+  cursor: pointer;
+  color: hsl(50.6, 100%, 50%);
+  filter: drop-shadow(0 0 0.9rem hsl(50.6, 100%, 50%));
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */

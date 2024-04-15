@@ -1,0 +1,111 @@
+footer {
+    background-color: $primaryColor;
+    
+}
+.footer__client {
+    color: $secondColor;
+
+    border:1px solid $primaryColor;
+}
+// ---> Company Web Info <---
+.footer__client__container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: 1.5rem;
+
+// --> Question Buttom ? <----
+    &__contact{
+        border:1px solid $thirdColor;
+        
+        padding: 1rem;
+
+        transition: all 0.3s ease 0s;
+
+        a {
+            text-decoration: none;
+            color: $secondColor;
+        }
+        .second {
+            display: none;
+        }
+    }
+    &__contact:hover {
+        cursor: pointer;
+        background-color: $start;
+        border: 1px solid $secondColor;
+        border-radius: 20px;
+        transition: all 0.3s ease 0s;
+
+        a {
+            color: $primaryColor;
+            content: "??";
+        }
+        .first {
+            display: none;
+        }
+        .second {
+            display: block;
+        }
+    }
+}
+.footer__client__container__TCL {
+    
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    p {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+}
+// ---> SiteMap <---
+.footer__websiteMap {
+    text-align: center;
+    font-size: 1.2rem;
+    height: 100%;
+
+    p{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondColor;
+
+        font-size: 1rem;
+    }
+    a:not(:last-child){
+        margin-right:10px;
+    }
+    a:hover {
+        color: $thirdColor;
+    }
+}
+
+// ---> Designer Info <---
+.footer__designer {
+    color: $secondColor;
+
+    // margin-left: auto;
+    // margin-right: 0;
+
+    &__container {
+        text-align: center;
+        font-size: 0.75rem;
+        
+        a {
+            color: $secondColor;
+            text-decoration: none;
+        }
+        a:hover {
+          cursor: pointer;
+          color: hsl(50.6, 100%, 50%);
+          filter: drop-shadow(0 0 0.9rem hsl(50.6, 100%, 50%));
+          transition: all 0.3s ease-in-out;
+        }
+    }
+}

@@ -1,3 +1,40 @@
 .main__client {
+    height: 42rem;
     
+    border: 1px solid red;
+    background-color: rgb(71, 66, 66);
+}
+.main__client__title {
+    display: flex;
+    justify-content: center;
+
+    font-size: 4rem;
+    margin: 0.5rem 0 3rem 0;
+
+}
+
+.main__client__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap:5rem;
+}
+.client__left {
+    width: 15rem;
+    height: 15rem;
+
+    border: 1px solid red;
+}
+.client__middle {
+    width: 25rem;
+    height: 25rem;
+
+    border: 1px solid red;
+}
+.client__right {
+    width: 15rem;
+    height: 15rem;
+
+    border: 1px solid red;
 }

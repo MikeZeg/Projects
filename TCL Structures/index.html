@@ -15,15 +15,17 @@
 <!-- Add sticky navigation - _GLOBAL already created  -->
 
 <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__logo">
-            <img src="#" alt="company_logo" class="header__logo__img">
+            <a href="#header">
+                <img src="./Images/TCL/TCL logo.webp" alt="company_logo" class="header__logo__img">
+            </a>
         </div>
 
         <nav class="header__nav">
 <!--------------- Desktop Version ------- hide for moblie chnage for another resolutions ---------->
             <div class="header__nav__desktop">
-                <a href="#home">Home</a>
+                <a href="#header">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
@@ -43,7 +45,7 @@
 <!-- ////// Main Content \\\\\\\\ different sectors  -->
     <main class="main">
 
-        <section class="main__home">
+        <section class="main__home" style="background-image:'url(../../../Images/backround/background1.jpg)';">
             <!-- full image on MAIN__HOME section -->
             <article class="main__home__container">
                 <div class="main__home__container__text">
@@ -55,7 +57,7 @@
             </article>
         </section>
 
-        <section class="main__about">
+        <section class="main__about" id="about">
             <article class="main__about__content">
     <!-- ?? change p to <div class="page header text"> -->                
                 <h1>About</h1>
@@ -70,7 +72,7 @@
             </div>
         </section>
 
-        <section class="main__services">
+        <section class="main__services" id="services">
             <div class="main__services__description">
 <!-- ?? change p to <div class="page header text"> -->
                 <p>Our Services</p>
@@ -189,7 +191,7 @@
             </div>
         </section>
  <!-- Main Projects  -->
-        <section class="main__projects">
+        <section class="main__projects" id="projects">
             <div class="main__projects__header">
                 <div class="main__projects">Projects</div>
                 <div class="main__projects">Explore Our Impressive Projects</div>
@@ -226,32 +228,147 @@
             </div>
             <a href="#" class="projects__anchor">Portfolio</a>
         </section>
-        
-        <section class="main__client">
+<!-- Clinet main -->
+        <section class="main__client" id="clients">
             <div class="main__client__title">
                 Our Clients
             </div>
             <div class="main__client__img">
-                <div class="img__change">IMG</div>
+                <div class="img__change client__left">IMG</div>
+                <div class="img__change client__middle">IMG</div>
+                <div class="img__change client__right">IMG</div>
             </div>
         </section>
+<!-- Contact main  -->
+        <section class="main__contact" id="contact">
+            <div class="main__client__description">
+                <div class="contact__title">Call Us and get it Done</div>
+                <div class="contact__description">If you've got questions or ideas you would like to share, please contact with us. Please check contact information below.</div>
+            </div>
 
-        <section class="main__contact"></section>
+            <div class="main__contact__maps">
+                <div class="main__contact__maps__first">first</div>
+                <div class="main__contact__maps__second">second</div>
+            </div>
+
+            <div class="main__contact__info">
+                <div class="main__contact__info__office offices">
+
+                    <div class="offices__hq">
+                        <div class="offices__hq__title">HeadQuarter <p>General enquiries</p></div>
+                        <div class="office">
+                            <div>
+                                <div>Address</div>
+                                <p>Alvar business Park, 
+                                    <br>Straight Road
+                                    <br>Willenhall
+                                    <br>wv12 5qy
+                                    <br>United Kingdom
+                                </p>
+                            </div>
+                            <div>
+                                <div>Phone</div>
+                                <p>0190260308</p>
+                            </div>
+                            <div>
+                                <div>Email</div>
+                                <p>sales1@tcl-s-ltd.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offices__2branch">
+                        <div class="offices__2branch__title">Northern Office <p>Labour Hire</p></div>
+                        <div class="office">
+                            <div>
+                                <div>Address</div>
+                                <p>Alvar business Park, 
+                                    <br>Straight Road
+                                    <br>Willenhall
+                                    <br>wv12 5qy
+                                    <br>United Kingdom
+                                </p>
+                            </div>
+                            <div>
+                                <div>Phone</div>
+                                <p>0190260308</p>
+                            </div>
+                            <div>
+                                <div>Email</div>
+                                <p>sales1@tcl-s-ltd.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Contact info -->
+                <div class="main__contact__info__coworkers">
+                    <div class="coBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                         <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="coBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                            <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="coBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                            <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="coBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                        <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="coBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                        <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="CoBox">
+                        <div class="coBox__title">Plant & Concrete Pump Hire</div>
+                        <div>Ashleigh Baxter
+                        <p>sales@tcl-sltd.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section></section>
     </main>
 <!-- ////// Footer \\\\\  -->
-    <footer>
+    <footer class="footer" id="footer">
         <section class="footer__client">
             <div class="footer__client__container">
-                <section></section>
-                <section></section>
-                <section></section>
+                <div class="footer__client__container__TCL">
+                    TCL Structures LTD <p>With over 10 years of experience in the industry. We are committed to delivering high-quality results that exceed our clients expectations.</p>
+                </div>
+                <div class="footer__client__container__sitemap">
+                    <div class="footer__websiteMap">
+                        <p>Go To: Use Links</p>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#clients">Clinets</a>
+                    </div>
+                </div>
+                <div class="footer__client__container__contact"> 
+                    <a href="#contact" class="first">Questions</a>
+                    <a href="#contact" class="second">Please Call Us</a>
+                </div>
             </div>
         </section>
         <section class="footer__designer">
             <div class="footer__designer__container">
-
+                <a href="https://github.com/MikeZeg"> © 2024 copyright designer MikeZeg </a>
             </div>
         </section>
     </footer>

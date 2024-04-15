@@ -1,0 +1,115 @@
+.main__contact {
+    height: 1220px;
+    background-color: white;
+}
+// -----> Contact title <------
+.main__client__description {
+    // border: 1px solid red;
+    margin: 0;
+
+    .contact__title {
+        font-size: 3rem;
+        margin: 1rem 0 1rem 3rem;
+    }
+    .contact__description {
+        margin-bottom: 2rem;
+        font-size: 1.35rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+// ------> Contact MAPS <-------
+.main__contact__maps {
+    // border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+    &__first {
+        width: 450px;
+        height: 250px;
+
+        border: 1px solid yellow;
+    }
+    &__second {
+        width: 450px;
+        height: 250px;
+
+        border: 1px solid pink;
+    }
+}
+.main__contact__info {
+    // border:1px solid red;
+    width: 100%;
+    height: 300px;
+
+    // ---> Box Office HQ <---
+    .offices {
+        // background-color:rgb(53, 51, 51);
+
+        color: black;
+
+        display: flex;
+        justify-content: space-around;
+        
+        &__hq {
+            
+            &__title {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+
+                p{
+                    margin-left: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &__2branch{
+
+            &__title {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+
+                p {
+                    margin-left: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .office {
+            color: $secondColor;
+            border: 1px solid white;
+            background-color: rgb(53, 51, 51);
+        }
+    }
+}
+.main__contact__info__coworkers {
+    border:1px solid blue;
+
+    width: 80%;
+    margin: 1rem auto 1rem auto;
+    
+
+    background-color:rgb(53, 51, 51);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+
+    .coBox {
+        color: $secondColor;
+        border: 1px solid yellow;
+        margin:0;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 200px;
+        height: 200px;
+    }
+}
