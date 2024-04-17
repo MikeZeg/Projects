@@ -93,7 +93,7 @@ strong {
 .main__home {
   width: 100%;
   height: 750px;
-  background-image: url(../../../Images/background/background1.jpg);
+  background-image: url("../Images/background/background1.jpg");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,6 @@ strong {
   color: black;
   width: 50%;
   margin-left: 2rem;
-  border: 1px blue solid;
 }
 .main__about__content h1 {
   margin-left: 2rem;
@@ -166,7 +165,6 @@ strong {
   font-size: 2.5rem;
 }
 .main__about__content__article {
-  border: 1px red solid;
   color: blue;
   margin: 0;
   margin-left: 3rem;
@@ -177,8 +175,36 @@ strong {
 .main__about__imgs {
   width: 50%;
   height: 100%;
-  background-image: url("");
-  border: 1px red solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__about__imgs__swap {
+  height: 80%;
+  width: 80%;
+  background-image: url("../Images/TCL/Albrighton/about3.jpg");
+  background-size: cover;
+}
+.main__about__imgs__left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.main__about__imgs__right {
+  color: blue;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.main__about__imgs .arrow {
+  height: 24px;
+  width: 24px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.main__about__imgs .arrow:hover {
+  border: solid black;
+  border-width: 0 5px 5px 0;
 }
 
 .main__services {

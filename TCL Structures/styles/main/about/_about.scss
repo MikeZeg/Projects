@@ -8,11 +8,7 @@
     color: black;
     width: 50%;
 
-    
-
     margin-left: 2rem;
-
-    border: 1px blue solid;
 
     h1 {
         margin-left: 2rem;
@@ -29,7 +25,6 @@
     }
 
     &__article {
-        border: 1px red solid;
         // width: 80%;
 
        color: blue;
@@ -45,8 +40,39 @@
 .main__about__imgs {
     width: 50%;
     height: 100%;
-    
-    background-image: url('');
 
-    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__swap {
+        height: 80%;
+        width: 80%;
+
+        background-image: url('../Images/TCL/Albrighton/about3.jpg');
+        background-size: cover;
+    }
+    &__left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    &__right {
+        color: blue;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .arrow {
+        height: 24px;
+        width: 24px;
+
+        border: solid white;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 3px;
+
+    }
+    .arrow:hover {
+        border: solid black;
+        border-width: 0 5px 5px 0;
+    }
 }
