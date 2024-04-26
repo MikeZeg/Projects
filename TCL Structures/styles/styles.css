@@ -90,6 +90,10 @@ strong {
   border: 1px red solid;
 }
 
+.changeImg {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
 .main__home {
   width: 100%;
   height: 750px;
@@ -105,7 +109,7 @@ strong {
   min-height: 80%;
   align-content: center;
   margin-left: 4rem;
-  background-color: rgba(1, 1, 1, 0.3);
+  background-color: rgba(1, 1, 1, 0.6);
   border: 1px solid hsl(10, 6%, 21%);
 }
 .main__home__container__text {

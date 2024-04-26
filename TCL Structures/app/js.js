@@ -1,17 +1,27 @@
 // Swap main__home background
-const homeImgSwap = document.querySelector('.main__home')
-console.log(homeImgSwap.style.backgroundImage.style)
+let flag = false;
 
+const changeBackgroundImage = () => {
+    const homeImg = document.querySelector('#homeImg');
 
-console.log('change img');
-homeImgSwap.style.backgroundImage = "url('../../../Images/background/background3.jpg')";
+    if(!flag){
+        homeImg.style.backgroundImage = "url('./Images/background/background2.jpg')"
+        homeImg.classList.add('changeImg')
+        flag = true;
+    }else {
+        homeImg.style.backgroundImage = "url('./Images/background/background1.jpg')"
+        flag = false;
+    }
 
-// homeImgSwap.style
+    
+}
+setInterval(changeBackgroundImage,5000)
+
 
 
 // Change images About
 const grabSwap = document.querySelector('#about > div > div.main__about__imgs__swap')
-
+// console.log(grabSwap)
 
 //Our Service change boxes
 
