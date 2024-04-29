@@ -20,18 +20,32 @@ const grabSwap = document.querySelector('.main__about__imgs__swap');
 const leftArrow = document.querySelector('.main__about__imgs__left');
 const rightArrow = document.querySelector('.main__about__imgs__right');
 
-let number = 1;
+let imageNumber = 1;
 
 leftArrow.addEventListener('click',()=>{
     console.log('Click left')
+    imageNumber -= 1;
+    changeImageAbout();
 })
 rightArrow.addEventListener('click',()=>{
-    console.log('Click right')
+    console.log('Click right');
+    imageNumber += 1;
+    changeImageAbout();
 })
 
+const changeImageAbout = () => {
+    
+    if(imageNumber < 1){
+        imageNumber = 5
+    }if(imageNumber > 5){
+        imageNumber = 1
+    }
+    grabSwap.style.backgroundImage = `url("./Images/about/about${imageNumber}.jpg")`;
+    console.log(grabSwap.style.backgroundImage)
+}
 
-// ${number} add to the end of URL
-// grabSwap.style.backgroundImage = `url(./Images/about/about${number}.jpg)`
+
+
 //Our Service change boxes
 
 //Header stay stick in top position or arrow on side
