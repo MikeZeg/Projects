@@ -1,10 +1,27 @@
 .main__projects {
-    color: pink;
+    color: $secondColor;
 
+    &__header{
+        
+        font-size: 1.3rem;
+        font-weight: bold;
+        
+        &__1 {
+            display: flex;
+            justify-content: center;
+        }
+        &__2 {
+            justify-content: center;
+            display: flex;
+            
+            margin:1rem 0 1rem 0;
 
+            font-weight: 500;
+        }
+    }
 
     &__itmes {
-        
+            border:1px solid red;
         }
 }
 .projects__anchor {
@@ -34,4 +51,8 @@
     width:450px;
     height: 550px;
     border: 1px blue solid;
+}
+// -----> Project Boxes with Images
+.main__projects__items {
+    background-color: black;
 }

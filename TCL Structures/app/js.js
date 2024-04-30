@@ -1,3 +1,6 @@
+// 1 Services change boxes ?
+// 2 
+
 // -------> Swap main__home background <---------
 let flag = false;
 
@@ -46,7 +49,7 @@ const changeImageAbout = () => {
 
 
 
-//Our Service change boxes
+
 
 //Header stay stick in top position or arrow on side
 
