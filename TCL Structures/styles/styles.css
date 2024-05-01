@@ -416,8 +416,9 @@ strong {
   margin: 1rem 0 1rem 0;
   font-weight: 500;
 }
-.main__projects__itmes {
-  border: 1px solid red;
+.main__projects__items {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 .projects__anchor {
@@ -432,7 +433,6 @@ strong {
 }
 
 .main__projects__grid {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
@@ -442,11 +442,26 @@ strong {
 .item {
   width: 450px;
   height: 550px;
-  border: 1px blue solid;
+  border: 1px hsl(0, 0%, 100%) solid;
+  border-radius: 0 0 15px 15px;
+}
+.item:hover {
+  background-color: black;
 }
 
-.main__projects__items {
-  background-color: black;
+.main__projects__items__img img {
+  width: 100%;
+  height: 75%;
+}
+.main__projects__items__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.25rem;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+.main__projects__items__description {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1rem;
 }
 
 .main__client {

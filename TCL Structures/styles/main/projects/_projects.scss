@@ -20,8 +20,9 @@
         }
     }
 
-    &__itmes {
-            border:1px solid red;
+    &__items {
+            text-decoration: none;
+            color: $secondColor;
         }
 }
 .projects__anchor {
@@ -39,8 +40,6 @@
 }
 
 .main__projects__grid {
-    border: 1px solid red;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -50,9 +49,36 @@
 .item {
     width:450px;
     height: 550px;
-    border: 1px blue solid;
+    border: 1px $secondColor solid;
+    border-radius: 0 0 15px 15px;
+
+    &:hover {
+        background-color: black;
+    }
 }
-// -----> Project Boxes with Images
 .main__projects__items {
-    background-color: black;
+    // background-color: inherit;
+
+// -----> Project Boxes with Images
+    &__img{
+
+        img{
+            width: 100%;
+            height: 75%;
+        }
+    }
+// ----------> Title <-----------
+    &__title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: 0.25rem;
+        
+        margin: 0.5rem 0 0.5rem 1rem;
+    }
+// -----> Description <---------
+    &__description {
+        margin: 0 0.5rem 0 0.5rem;
+        font-size: 1rem;
+
+    }
 }
