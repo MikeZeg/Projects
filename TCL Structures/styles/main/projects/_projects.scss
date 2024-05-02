@@ -42,7 +42,7 @@
 .main__projects__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 35px;
     justify-items: center;
 
 }
@@ -52,8 +52,14 @@
     border: 1px $secondColor solid;
     border-radius: 0 0 15px 15px;
 
+
     &:hover {
-        background-color: black;
+        background-color: hsl(0,0%,0%,0.2);
+
+        //blur other boxes
+        font-size: 1rem;
+        color: black;
+        // filter: blur(4px);
     }
 }
 .main__projects__items {
@@ -79,6 +85,6 @@
     &__description {
         margin: 0 0.5rem 0 0.5rem;
         font-size: 1rem;
-
     }
+    
 }

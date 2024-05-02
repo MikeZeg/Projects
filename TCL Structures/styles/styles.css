@@ -435,7 +435,7 @@ strong {
 .main__projects__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 35px;
   justify-items: center;
 }
 
@@ -446,7 +446,9 @@ strong {
   border-radius: 0 0 15px 15px;
 }
 .item:hover {
-  background-color: black;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  font-size: 1rem;
+  color: black;
 }
 
 .main__projects__items__img img {
