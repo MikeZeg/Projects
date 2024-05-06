@@ -409,11 +409,13 @@ strong {
 .main__projects__header__1 {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 .main__projects__header__2 {
   justify-content: center;
   display: flex;
   margin: 1rem 0 1rem 0;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .main__projects__items {
@@ -425,11 +427,25 @@ strong {
   border: 1px solid white;
   height: 2rem;
   width: 12rem;
+  letter-spacing: 0;
   margin: 2rem auto 2rem auto;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+  transition: all 280ms ease-in-out;
   display: flex;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+}
+.projects__anchor:hover {
+  letter-spacing: 5px;
+  transition: all 280ms ease-in-out;
+  color: white;
+  background-color: black;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .main__projects__grid {
@@ -468,7 +484,6 @@ strong {
 
 .main__client {
   height: 42rem;
-  border: 1px solid red;
   background-color: rgb(71, 66, 66);
 }
 
@@ -477,6 +492,7 @@ strong {
   justify-content: center;
   font-size: 4rem;
   margin: 0.5rem 0 3rem 0;
+  padding-top: 2rem;
 }
 
 .main__client__img {
@@ -487,29 +503,40 @@ strong {
 }
 
 .client__left {
-  width: 15rem;
-  height: 15rem;
-  border: 1px solid red;
+  width: 17rem;
+  height: 17rem;
+  border: 1px solid hsla(36, 68%, 51%, 0.997);
+  border-radius: 15px 0 15px 0;
+  background-image: url("../Images/client/client1.png");
+  background-size: 17rem 17rem;
+  background-repeat: no-repeat;
 }
 
 .client__middle {
   width: 25rem;
   height: 25rem;
-  border: 1px solid red;
+  border: 1px solid hsla(36, 68%, 51%, 0.997);
+  border-radius: 15px 0 15px 0;
+  background-image: url("../Images/client/client2.png");
+  background-size: 25rem 25rem;
 }
 
 .client__right {
-  width: 15rem;
-  height: 15rem;
-  border: 1px solid red;
+  width: 17rem;
+  height: 17rem;
+  border: 1px solid hsla(36, 68%, 51%, 0.997);
+  border-radius: 15px 0 15px 0;
+  background-image: url("../Images/client/client3.png");
+  background-size: 17rem 17rem;
 }
 
 .main__contact {
-  height: 1220px;
+  height: 1250px;
   background-color: white;
 }
 
 .main__client__description {
+  border: 1px solid rgb(255, 255, 255);
   margin: 0;
 }
 .main__client__description .contact__title {
@@ -518,6 +545,7 @@ strong {
 }
 .main__client__description .contact__description {
   margin-bottom: 2rem;
+  padding-right: 2rem;
   font-size: 1.35rem;
   display: flex;
   justify-content: flex-end;
@@ -531,12 +559,20 @@ strong {
 .main__contact__maps__first {
   width: 450px;
   height: 250px;
-  border: 1px solid yellow;
+  background-image: url("../Images/TCL/map/main.png");
+  background-size: cover;
+  transition: transform 0.4s;
 }
 .main__contact__maps__second {
   width: 450px;
   height: 250px;
-  border: 1px solid pink;
+  background-image: url("../Images/TCL/map/northern.png");
+  background-size: cover;
+  transition: transform 0.4s;
+}
+.main__contact__maps__second:hover:hover, .main__contact__maps__first:hover:hover {
+  transform: scale(1.6);
+  transition: transform 0.4s;
 }
 
 .main__contact__info {
@@ -548,6 +584,14 @@ strong {
   display: flex;
   justify-content: space-around;
 }
+.main__contact__info .offices p {
+  margin-left: 50px;
+  letter-spacing: 1px;
+  padding-right: 5px;
+}
+.main__contact__info .offices__hq {
+  min-width: 15rem;
+}
 .main__contact__info .offices__hq__title {
   justify-content: center;
   display: flex;
@@ -557,6 +601,9 @@ strong {
 .main__contact__info .offices__hq__title p {
   margin-left: 10px;
   font-weight: 500;
+}
+.main__contact__info .offices__2branch {
+  min-width: 15rem;
 }
 .main__contact__info .offices__2branch__title {
   justify-content: center;
@@ -572,10 +619,11 @@ strong {
   color: hsl(0, 0%, 100%);
   border: 1px solid white;
   background-color: rgb(53, 51, 51);
+  padding: 10px;
+  border-radius: 0 25px 0 25px;
 }
 
 .main__contact__info__coworkers {
-  border: 1px solid blue;
   width: 80%;
   margin: 1rem auto 1rem auto;
   background-color: rgb(53, 51, 51);
@@ -586,12 +634,33 @@ strong {
 }
 .main__contact__info__coworkers .coBox {
   color: hsl(0, 0%, 100%);
-  border: 1px solid yellow;
+  border: 1px solid hsla(36, 68%, 51%, 0.997);
+  border-radius: 15px 0 15px 0;
   margin: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 200px;
   height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  align-content: space-evenly;
+}
+.main__contact__info__coworkers .coBox__title {
+  font-weight: bold;
+}
+.main__contact__info__coworkers .coBox p {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+.main__contact__info__coworkers .coBox p a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.main__contact__info__coworkers .coBox p a:hover {
+  color: hsla(36, 68%, 51%, 0.997);
 }
 
 footer {

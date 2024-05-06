@@ -1,10 +1,10 @@
 .main__contact {
-    height: 1220px;
+    height: 1250px;
     background-color: white;
 }
 // -----> Contact title <------
 .main__client__description {
-    // border: 1px solid red;
+    border: 1px solid rgb(255, 255, 255);
     margin: 0;
 
     .contact__title {
@@ -13,6 +13,7 @@
     }
     .contact__description {
         margin-bottom: 2rem;
+        padding-right: 2rem;
         font-size: 1.35rem;
         display: flex;
         justify-content: flex-end;
@@ -20,7 +21,6 @@
 }
 // ------> Contact MAPS <-------
 .main__contact__maps {
-    // border:1px solid blue;
     display: flex;
     justify-content: center;
     gap: 10rem;
@@ -29,23 +29,39 @@
         width: 450px;
         height: 250px;
 
-        border: 1px solid yellow;
+        background-image: url('../Images/TCL/map/main.png');
+        background-size: cover;
+        transition: transform 0.4s;
     }
     &__second {
         width: 450px;
         height: 250px;
 
-        border: 1px solid pink;
+        background-image: url('../Images/TCL/map/northern.png');
+        background-size: cover;
+        transition: transform 0.4s;
+    }
+
+    &__second:hover, &__first:hover {
+        &:hover {
+            -webkit-transform:scale(1.75);
+            -ms-transform:scale(1.6);
+            transform: scale(1.6);
+            transition: transform 0.4s;
+        }
     }
 }
 .main__contact__info {
-    // border:1px solid red;
     width: 100%;
     height: 300px;
 
-    // ---> Box Office HQ <---
+// ---> Box Office HQ <---
     .offices {
-        // background-color:rgb(53, 51, 51);
+        p{
+            margin-left:50px;
+            letter-spacing: 1px;
+            padding-right: 5px;
+        }
 
         color: black;
 
@@ -53,6 +69,7 @@
         justify-content: space-around;
         
         &__hq {
+            min-width: 15rem;
             
             &__title {
                 justify-content: center;
@@ -67,6 +84,7 @@
             }
         }
         &__2branch{
+            min-width: 15rem;
 
             &__title {
                 justify-content: center;
@@ -80,20 +98,20 @@
                 }
             }
         }
-
+// --------> 2 Contact Boxes Style <---------
         .office {
             color: $secondColor;
             border: 1px solid white;
             background-color: rgb(53, 51, 51);
+            padding: 10px;
+            border-radius: 0 25px 0 25px;
         }
     }
 }
+// ------> Contact CoWorkers /  <-------
 .main__contact__info__coworkers {
-    border:1px solid blue;
-
     width: 80%;
     margin: 1rem auto 1rem auto;
-    
 
     background-color:rgb(53, 51, 51);
 
@@ -102,14 +120,42 @@
     gap: 20px;
     justify-items: center;
 
+
+// -----> Contacts Boxes <-----
     .coBox {
         color: $secondColor;
-        border: 1px solid yellow;
-        margin:0;
+        border: 1px solid $thirdColor;
+        border-radius: 15px 0 15px 0;
 
+        margin:0;
         margin-top: 1rem;
         margin-bottom: 1rem;
         width: 200px;
         height: 200px;
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-content: space-evenly;
+
+        &__title {
+            font-weight: bold;
+        }
+        p {
+            font-size: 0.9rem;
+            padding: 0;
+            margin: 0;
+
+            a {
+                color: $secondColor;
+                text-decoration: none;
+
+
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+        }
     }
 }

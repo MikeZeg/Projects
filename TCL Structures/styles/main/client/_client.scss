@@ -1,7 +1,6 @@
 .main__client {
     height: 42rem;
     
-    border: 1px solid red;
     background-color: rgb(71, 66, 66);
 }
 .main__client__title {
@@ -10,7 +9,7 @@
 
     font-size: 4rem;
     margin: 0.5rem 0 3rem 0;
-
+    padding-top: 2rem;
 }
 
 .main__client__img {
@@ -21,20 +20,34 @@
     gap:5rem;
 }
 .client__left {
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 17rem;
 
-    border: 1px solid red;
+    border:1px solid $thirdColor;
+
+    border-radius: 15px 0 15px 0;
+
+    background-image: url('../Images/client/client1.png');
+    background-size: 17rem 17rem;
+    background-repeat: no-repeat;
 }
 .client__middle {
     width: 25rem;
     height: 25rem;
 
-    border: 1px solid red;
+    border:1px solid $thirdColor;
+    border-radius: 15px 0 15px 0;
+
+    background-image: url('../Images/client/client2.png');
+    background-size: 25rem 25rem;
 }
 .client__right {
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 17rem;
 
-    border: 1px solid red;
+    border:1px solid $thirdColor;
+    border-radius: 15px 0 15px 0;
+    
+    background-image: url('../Images/client/client3.png');
+    background-size: 17rem 17rem;
 }
