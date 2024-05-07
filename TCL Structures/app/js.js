@@ -86,11 +86,23 @@ const changeClientImages = () => {
     middleImages.style.backgroundImage = `url("./Images/client/client${x}.png")`;
     rightImages.style.backgroundImage = `url("./Images/client/client${y}.png")`;
     
-    console.log('Number: ' + number)
     number += 1;
-    console.log(middleImages.style.backgroundImage)
 }
 setInterval(changeClientImages,3000)
 
 //Header stay stick in top position or arrow on side
+const stickyNavBar = document.querySelector('.header');
+const sticky = stickyNavBar.offsetTop;
+console.log(stickyNavBar)
 
+function myFun(){
+    console.log(sticky)
+    let ypos = window.scrollY;
+    console.log(ypos)
+    if(ypos > 120){
+        stickyNavBar.classList.add('sticky')
+    }else{
+        stickyNavBar.classList.remove('sticky')
+    }
+}
+window.addEventListener("scroll", myFun);

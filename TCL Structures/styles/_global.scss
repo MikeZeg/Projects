@@ -7,11 +7,9 @@ body {
     padding: 0;
 }
 //--> Sticky navigation for desktop version <---
-.sitcky {
-    position:fixed;
+.sticky {
+    position:fixed!important;
     top:0;
-    width: 100%;
-}
-.sticky + .contnet {
-    padding-top: 60px;
+    width: 99%;
+    transition: all 0.3s ease 0s;
 }
