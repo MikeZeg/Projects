@@ -23,7 +23,7 @@ body {
   width: 30%;
   height: 95%;
   margin-left: 10px;
-  align-content: center;
+  -webkit-padding-before: 10px;
 }
 .header__logo img {
   width: 45%;
@@ -104,6 +104,8 @@ strong {
   width: 40%;
   min-height: 80%;
   align-content: center;
+  display: -webkit-flex;
+  align-items: center;
   margin-left: 4rem;
   background-color: rgba(1, 1, 1, 0.6);
   border: 1px solid hsl(10, 6%, 21%);
@@ -528,7 +530,7 @@ strong {
 }
 
 .main__contact {
-  height: 1240px;
+  height: 1260px;
   background-color: white;
 }
 

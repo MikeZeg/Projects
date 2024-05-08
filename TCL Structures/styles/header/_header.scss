@@ -15,7 +15,11 @@
         height: 95%;
         margin-left:10px;
 
-        align-content: center;
+// center Img
+        // align-content: center;
+        // -webkit-align-items: center;
+        // -webkit-align-self: center;
+        -webkit-padding-before: 10px;
 
         img{
             width: 45%;
