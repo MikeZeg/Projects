@@ -459,6 +459,8 @@ strong {
   height: 550px;
   border: 1px hsl(0, 0%, 100%) solid;
   border-radius: 0 0 15px 15px;
+  background-color: white;
+  color: black;
 }
 .item:hover {
   background-color: hsla(0, 0%, 0%, 0.2);
@@ -472,7 +474,7 @@ strong {
 }
 .main__projects__items__title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.25rem;
   margin: 0.5rem 0 0.5rem 1rem;
 }

@@ -72,6 +72,8 @@
     height: 550px;
     border: 1px $secondColor solid;
     border-radius: 0 0 15px 15px;
+    background-color:white;
+    color:black;
 
 
     &:hover {
@@ -97,7 +99,7 @@
 // ----------> Title <-----------
     &__title {
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         letter-spacing: 0.25rem;
         
         margin: 0.5rem 0 0.5rem 1rem;
