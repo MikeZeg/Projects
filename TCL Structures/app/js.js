@@ -1,7 +1,9 @@
-// 1 Services change boxes ?
-// 2 
+// 1 Main__home Swap background image
+// 2 Main__about Swap manual images - main__about__imgs__swap
+// 3 Main__client Swap images - Main__client__img
+// 4 Header Sticky Bar.
 
-// -------> Swap main__home background <---------
+// #1 -------> Swap main__home background <---------
 let flag = false;
 
 const changeBackgroundImage = () => {
@@ -17,8 +19,9 @@ const changeBackgroundImage = () => {
     }
 };
 setInterval(changeBackgroundImage,5000);
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
 
-// --------> Change images About <----------
+// #2 --------> Change images About <----------
 const grabSwap = document.querySelector('.main__about__imgs__swap');
 const leftArrow = document.querySelector('.main__about__imgs__left');
 const rightArrow = document.querySelector('.main__about__imgs__right');
@@ -46,29 +49,19 @@ const changeImageAbout = () => {
     grabSwap.style.backgroundImage = `url("./Images/about/about${imageNumber}.jpg")`;
     console.log(grabSwap.style.backgroundImage)
 }
-// ------> Swap Images Client <-------
+// -^-----^-----^-----^-----^-----^-----^-----^----
+
+// #3 ------> Swap Images Client <-------
 const leftImages = document.querySelector('.client__left');
 const middleImages = document.querySelector('.client__middle');
 const rightImages = document.querySelector('.client__right');
-
-//  1-9
-//  x=1 y=2 z=3
-//  x=2 y=3 z=4
-//  x=3 y=4 z=5
-//  x=4 y=5 z=6
-//  x=5 y=6 z=7
-//  x=6 y=7 z=8
-//  x=7 y=8 z=9
-//  x=8 y=9 z=1
-//  x=9 y=1 z=2
-
 let number = 1;
+
 const changeClientImages = () => {
     
     if(number > 9){
         number = 1;
     }
-
     let x = number + 1;
     let y = number + 2;
     if(x == 10){
@@ -89,16 +82,14 @@ const changeClientImages = () => {
     number += 1;
 }
 setInterval(changeClientImages,3000)
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
 
-//Header stay stick in top position or arrow on side
+// #4 - Header stay stick in top position or arrow on side
 const stickyNavBar = document.querySelector('.header');
 const sticky = stickyNavBar.offsetTop;
-console.log(stickyNavBar)
 
 function myFun(){
-    console.log(sticky)
     let ypos = window.scrollY;
-    console.log(ypos)
     if(ypos > 120){
         stickyNavBar.classList.add('sticky')
     }else{
@@ -106,3 +97,28 @@ function myFun(){
     }
 }
 window.addEventListener("scroll", myFun);
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
+
+// #5 Home - move to TOP
+const homeMove = document.querySelector('#navHome')
+
+homeMove.addEventListener('click', ()=>{
+    window.scrollTo(0,0)
+});
+
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
+
+// #6 Qoute button in Header - move screen  to form
+const quoteBtn  = document.querySelector('.btnQuote')
+
+quoteBtn.addEventListener('click', (e)=>{
+    console.log('Working');
+    e.preventDefault();
+// to low in used contact__form ??
+    document.querySelector('.main__services__img__items__imprinted').scrollIntoView();
+
+
+});
+
+
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
