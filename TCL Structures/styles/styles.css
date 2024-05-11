@@ -215,6 +215,10 @@ strong {
 
 .main__services__description {
   color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .main__services__description p {
   color: black;
@@ -255,9 +259,9 @@ strong {
   transition: all 0.3s ease 0s;
 }
 .main__services__description__text {
+  width: 60%;
   display: flex;
   align-items: center;
-  margin: 1.5rem 2rem 1.5rem 2rem;
   justify-content: center;
   text-align: center;
   color: black;

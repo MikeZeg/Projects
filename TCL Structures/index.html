@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
-    <!-- To DO list -->
-<!-- Add meta tags in head to better SEO concrete, building, hire pump, concrete pump, plant remove, soil remove, -->
-<!-- Check if can use div class='page header text' (*) against h1 -->
-<!-- Add sticky navigation - _GLOBAL already created  -->
+<!-- TODO  -->
+    <!-- add pages with projects -->
+    <!-- add modulo?? to services -->
 
 <!-- Header -->
     <header class="header" id="header">
@@ -46,7 +44,7 @@
 
 <!-- ////// Main Content \\\\\\\\ different sectors  -->
     <main class="main">
-    
+    <!--------- home section ---------->
         <section class="main__home" id="homeImg">
             <!-- full image on MAIN__HOME section -->
             <article class="main__home__container">
@@ -57,7 +55,7 @@
                 </div>
             </article>
         </section>
-
+<!-------- About Section  ---------->
         <section class="main__about" id="about">
             <article class="main__about__content">
     <!-- ?? change p to <div class="page header text"> -->                
@@ -75,6 +73,7 @@
             </div>
         </section>
 
+<!---------------- Services Sections  --------->
         <section class="main__services" id="services">
             <div class="main__services__description">
                 <p>Our Services</p>
@@ -82,11 +81,12 @@
                     <h2>Building Dreams with TCL Structures</h2>
                     <button id="btn__callUs" class="main__services__description__btn btn__call__us">Call Us Today</button>
                 </div>
-                <div class="main__services__description__text description__text">TCL is your top choice for construction needs with expertise in concrete works, ground and drainage projects, skilled workers, and concrete pump hire services. We ensure top-notch quality and timely completion of projects, providing exceptional value to every client. Our dedicated team delivers professional results, making TCL the ideal partner for all your construction requirements.</div>
+                <div class="main__services__description__text description__text"><p>TCL is your top choice for construction needs with expertise in concrete works, ground and drainage projects, skilled workers, and concrete pump hire services. We ensure top-notch quality and timely completion of projects, providing exceptional value to every client. Our dedicated team delivers professional results, making TCL the ideal partner for all your construction requirements.</p></div>
             </div>
             
             <div class="main__services__img">
                 <div class="main__services__img__items">
+
                     <div class="main__services__img__items__concrete__works box">
                         <div class="img">
                             <img src="./Images/TCL/Hampton Loade/1695900015242.jpg" alt="background">
@@ -95,8 +95,12 @@
                                     <div class="description">Our main area of expertise lies in the construction of in situ concrete structures. These include ground bearing slabs, structural frames, retaining walls, watertight structures, basement and more.</div>
                                 </div>
                         </div>
+                        <div class="check" style="display: none;">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae officiis fugit, minima magni autem vero beatae voluptate! Fugit doloribus tenetur modi quibusdam placeat alias dolore deleniti? Quam, officiis laborum.</h2>
+                        </div>
                     </div>
-
+                    
+                        
                     <div class="main__services__img__items__ground__drainage box">
                         <div class="img">
                             <img src="./Images/TCL/Gornal/1688729815227.jpg" alt="background">
@@ -105,7 +109,11 @@
                                 <div class="description">Our main area of expertise lies in the construction of in situ concrete structures. These include ground bearing slabs, structural frames, retaining walls, watertight structures, basement and more.</div>
                             </div>
                         </div>
+                        <div class="check" style="display: none;">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae officiis fugit, minima magni autem vero beatae voluptate! Fugit doloribus tenetur modi quibusdam placeat alias dolore deleniti? Quam, officiis laborum.</h2>
+                        </div>
                     </div>
+
 
                     <div class="main__services__img__items__pumpHire box">
                         <div class="img">
@@ -149,7 +157,8 @@
                 </div>
 
                 <div class="main__services__img__contact">
-                    <!-- Contact FORM -->
+
+<!---------- Contact FORM ------------>
                     <div class="main__services__img__contact__form contactForm">
                         <form action="action">
                             <label for="firstName">First Name</label>
@@ -178,7 +187,8 @@
                     </div>
 
                     <div class="main__services__img__contact__accreditations ">
-<!------------ CSS Style in _main.scss ---------------->
+
+<!------------ Accreditations  ---------------->
                         <div class="accredit__images">
                             <div class="accredit__img accredImage" style="background-color: white;">
                                 <img src="./Images/accreditations/acc1.png" alt="accreditation">
@@ -210,13 +220,15 @@
                 </div>
             </div>
         </section>
- <!-- Main Projects  -->
+
+ <!--------------- Projects Section ------------>
         <section class="main__projects" id="projects">
             <div class="main__projects__header">
                 <div class="main__projects__header__1">Projects</div>
                 <div class="main__projects__header__2">Explore Our Impressive Projects</div>
             </div>
-<!-- Items Projects  -->
+
+    <!-------- Items Projects  ---------->
             <div class="main__projects__items">
                 <div class="main__projects__grid">
 
@@ -256,7 +268,8 @@
             </div>
             <a href="#" class="projects__anchor">Portfolio</a>
         </section>
-<!-- Clinet main -->
+
+<!--------- Client main --------->
         <section class="main__client" id="clients">
             <div class="main__client__title">
                 Our Clients
@@ -267,7 +280,8 @@
                 <div class="img__change client__right"></div>
             </div>
         </section>
-<!-- Contact main  -->
+
+<!-------- Contact main  -------->
         <section class="main__contact" id="contact">
             <div class="main__client__description">
                 <div class="contact__title">Call Us and get it Done</div>
@@ -282,6 +296,7 @@
             <div class="main__contact__info">
                 <div class="main__contact__info__office offices">
 
+    <!-------- HQ office ---------->
                     <div class="offices__hq">
                         <div class="offices__hq__title">HeadQuarter <p>General enquiries</p></div>
                         <div class="office">
@@ -304,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    
+        <!------- second office ------->
                     <div class="offices__2branch">
                         <div class="offices__2branch__title">Northern Office <p>Labour Hire</p></div>
                         <div class="office">
@@ -328,6 +343,7 @@
                         </div>
                     </div>
                 </div>
+
 <!-- Contact info -->
                 <div class="main__contact__info__coworkers">
                     <div class="coBox">
@@ -381,6 +397,9 @@
         
         <section></section>
     </main>
+
+
+
 <!-- ////// Footer \\\\\  -->
     <footer class="footer" id="footer">
         <section class="footer__client">

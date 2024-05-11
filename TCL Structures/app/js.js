@@ -108,7 +108,7 @@ homeMove.addEventListener('click', ()=>{
 
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
 
-// #6 Qoute button in Header - move screen  to form
+// #6 Quote button in Header - move screen  to form
 const quoteBtn  = document.querySelector('.btnQuote')
 
 quoteBtn.addEventListener('click', (e)=>{
@@ -117,8 +117,24 @@ quoteBtn.addEventListener('click', (e)=>{
 // to low in used contact__form ??
     document.querySelector('.main__services__img__items__imprinted').scrollIntoView();
 
-
 });
-
-
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
+
+// #7 - Open services windows
+const fullScreenBox = document.querySelectorAll('.check');
+
+document.querySelectorAll('.box').forEach((box)=>{
+    
+    box.addEventListener('click',(e)=>{
+        box.style.backgroundColor = 'red';
+        console.log(e)
+        let asd = document.querySelector('> check');
+        console.log(asd)
+    });
+})
+fullScreenBox.forEach((check)=>{
+    check.addEventListener('click',(check)=>{
+        // check.style.width = '100%';
+        check.style.display = 'block';
+    })
+})
