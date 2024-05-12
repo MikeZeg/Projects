@@ -120,21 +120,31 @@ quoteBtn.addEventListener('click', (e)=>{
 });
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
-// #7 - Open services windows
+// #7 - Open services windows - full open
 const fullScreenBox = document.querySelectorAll('.check');
 
 document.querySelectorAll('.box').forEach((box)=>{
     
     box.addEventListener('click',(e)=>{
-        box.style.backgroundColor = 'red';
-        console.log(e)
-        let asd = document.querySelector('> check');
-        console.log(asd)
+        console.log(e);
+        console.log(box);
+
+        closeFullBox();
+
+    // Open div to full screen. Add class to div
+        const checkBox = box.querySelector('.check')
+        // checkBox.style.display = 'grid';
+        checkBox.classList.add('openFull')
+        checkBox.classList.remove('closeFull')
     });
 })
-fullScreenBox.forEach((check)=>{
-    check.addEventListener('click',(check)=>{
-        // check.style.width = '100%';
-        check.style.display = 'block';
-    })
-})
+
+const closeFullBox = () => {
+    const checkBoxBefore = document.querySelectorAll('.check')
+    
+    checkBoxBefore.forEach((box)=>{
+        box.classList.remove('openFull');
+        box.classList.add('closeFull');
+        console.log(box);
+    });
+}
