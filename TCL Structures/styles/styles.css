@@ -20,10 +20,16 @@ body {
   height: 70%;
   background-color: hsla(0, 3.21%, 9.74%, 0.88);
   color: white;
+  transition-timing-function: ease-in-out;
 }
 
 .closeFull {
   display: none;
+  transition: all 1s ease;
+}
+
+.animations {
+  transition: all 1s ease;
 }
 
 .header {

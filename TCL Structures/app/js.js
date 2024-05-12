@@ -124,18 +124,16 @@ quoteBtn.addEventListener('click', (e)=>{
 const fullScreenBox = document.querySelectorAll('.check');
 
 document.querySelectorAll('.box').forEach((box)=>{
-    
+
     box.addEventListener('click',(e)=>{
-        console.log(e);
-        console.log(box);
-
+// console.log(e);
+// console.log(box);
         closeFullBox();
-
-    // Open div to full screen. Add class to div
-        const checkBox = box.querySelector('.check')
-        // checkBox.style.display = 'grid';
-        checkBox.classList.add('openFull')
-        checkBox.classList.remove('closeFull')
+// Open div to full screen. Add class to div
+        const checkBox = box.querySelector('.check');
+        checkBox.classList.add('openFull');
+        checkBox.classList.remove('closeFull');
+        checkBox.classList.add('animations')
     });
 })
 
