@@ -10,28 +10,6 @@ body {
   width: 99%;
 }
 
-.openFull {
-  display: block;
-  z-index: 1;
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  width: 60%;
-  height: 70%;
-  background-color: hsla(0, 3.21%, 9.74%, 0.88);
-  color: white;
-  transition-timing-function: ease-in-out;
-}
-
-.closeFull {
-  display: none;
-  transition: all 1s ease;
-}
-
-.animations {
-  transition: all 1s ease;
-}
-
 .header {
   position: relative;
   display: flex;
@@ -177,14 +155,14 @@ strong {
   margin-left: 2rem;
 }
 .main__about__content h1 {
-  margin-left: 2rem;
+  margin-left: 3rem;
   font-size: 2rem;
   font-weight: 700;
 }
 .main__about__content p {
   display: flex;
   justify-content: flex-end;
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-size: 2.5rem;
 }
 .main__about__content__article {
@@ -517,6 +495,7 @@ strong {
   display: flex;
   justify-content: center;
   font-size: 4rem;
+  color: white;
   margin: 0.5rem 0 3rem 0;
   padding-top: 2rem;
 }
@@ -687,6 +666,28 @@ strong {
 }
 .main__contact__info__coworkers .coBox p a:hover {
   color: hsla(36, 68%, 51%, 0.997);
+}
+
+.openFull {
+  display: block;
+  z-index: 1;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 70%;
+  background-color: hsla(0, 3.21%, 9.74%, 0.88);
+  color: white;
+  transition-timing-function: ease-in-out;
+}
+
+.closeFull {
+  display: none;
+  transition: all 1s ease;
+}
+
+.animations {
+  transition: all 1s ease;
 }
 
 footer {
