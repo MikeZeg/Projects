@@ -29,12 +29,12 @@ const rightArrow = document.querySelector('.main__about__imgs__right');
 let imageNumber = 1;
 
 leftArrow.addEventListener('click',()=>{
-    console.log('Click left')
+    // console.log('Click left')
     imageNumber -= 1;
     changeImageAbout();
 })
 rightArrow.addEventListener('click',()=>{
-    console.log('Click right');
+    // console.log('Click right');
     imageNumber += 1;
     changeImageAbout();
 })
@@ -47,7 +47,7 @@ const changeImageAbout = () => {
         imageNumber = 1
     }
     grabSwap.style.backgroundImage = `url("./Images/about/about${imageNumber}.jpg")`;
-    console.log(grabSwap.style.backgroundImage)
+    // console.log(grabSwap.style.backgroundImage)
 }
 // -^-----^-----^-----^-----^-----^-----^-----^----
 
@@ -112,7 +112,7 @@ homeMove.addEventListener('click', ()=>{
 const quoteBtn  = document.querySelector('.btnQuote')
 
 quoteBtn.addEventListener('click', (e)=>{
-    console.log('Working');
+    // console.log('Working');
     e.preventDefault();
 // to low in used contact__form ??
     document.querySelector('.main__services__img__items__imprinted').scrollIntoView();
@@ -146,3 +146,13 @@ const closeFullBox = () => {
         console.log(box);
     });
 }
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
+
+// #8 - Hidden Btn - close window
+const closeHiddenBox = document.querySelectorAll('.hidden__btn');
+
+
+closeHiddenBox.forEach((x)=>{
+    console.log(x)
+      
+})
