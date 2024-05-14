@@ -84,7 +84,7 @@ const changeClientImages = () => {
 setInterval(changeClientImages,3000)
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^----
 
-// #4 - Header stay stick in top position or arrow on side
+// #4 - Header/Nav stick in top position
 const stickyNavBar = document.querySelector('.header');
 const sticky = stickyNavBar.offsetTop;
 
@@ -121,19 +121,17 @@ quoteBtn.addEventListener('click', (e)=>{
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
 // #7 - Open services windows - full open
-const fullScreenBox = document.querySelectorAll('.check');
 
 document.querySelectorAll('.box').forEach((box)=>{
 
     box.addEventListener('click',(e)=>{
-// console.log(e);
-// console.log(box);
+
         closeFullBox();
 // Open div to full screen. Add class to div
         const checkBox = box.querySelector('.check');
         checkBox.classList.add('openFull');
         checkBox.classList.remove('closeFull');
-        checkBox.classList.add('animations')
+        // checkBox.classList.add('animations')
     });
 })
 
@@ -143,7 +141,6 @@ const closeFullBox = () => {
     checkBoxBefore.forEach((box)=>{
         box.classList.remove('openFull');
         box.classList.add('closeFull');
-        console.log(box);
     });
 }
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
@@ -151,8 +148,12 @@ const closeFullBox = () => {
 // #8 - Hidden Btn - close window
 const closeHiddenBox = document.querySelectorAll('.hidden__btn');
 
+function closeBtn() {
+    console.log('Click');
+    closeFullBox();
+    const asd = document.querySelectorAll('.check');
+    asd.forEach((a)=>{
+        a.classList.add('closeFull')
+    })
 
-closeHiddenBox.forEach((x)=>{
-    console.log(x)
-      
-})
+}
