@@ -1,7 +1,12 @@
-// 1 Main__home Swap background image
-// 2 Main__about Swap manual images - main__about__imgs__swap
-// 3 Main__client Swap images - Main__client__img
-// 4 Header Sticky Bar.
+// #1 Main__home Swap background image
+// #2 Main__about Swap manual images - main__about__imgs__swap
+// #3 Main__client Swap images - Main__client__img
+// #4 Header Sticky Bar
+// #5 Home - move to TOP
+// #6 Quote button in Header - move screen  to form
+// #7 Close another windows
+    // #7.1 Close another windows
+// #8 Hidden BTN
 
 // #1 -------> Swap main__home background <---------
 let flag = false;
@@ -112,7 +117,7 @@ homeMove.addEventListener('click', ()=>{
 const quoteBtn  = document.querySelector('.btnQuote')
 
 quoteBtn.addEventListener('click', (e)=>{
-    // console.log('Working');
+    
     e.preventDefault();
 // to low in used contact__form ??
     document.querySelector('.main__services__img__items__imprinted').scrollIntoView();
@@ -121,49 +126,46 @@ quoteBtn.addEventListener('click', (e)=>{
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
 // #7 - Open services windows - full open
+const pressBox = document.querySelectorAll('.box')
 
-document.querySelectorAll('.box').forEach((box)=>{
-    
+pressBox.forEach((box)=>{
+
+//check if other is open??
+closeBoxes(box);
+
+
+
+// Open window after press
     box.addEventListener('click',(e)=>{
-        console.log('Open Window')
-        console.log(box)
-        
-        closeFullBox();
-        
-// Open div to full screen. Add class to div
-        const checkBox = box.querySelector('.check');
-        console.log(checkBox)
+        const showBox = box.querySelector('.check')
+        showBox.classList.toggle('closeFull');
+        showBox.classList.toggle('openFull')
+    })
+});
 
-        checkBox.classList.add('openFull');
-        checkBox.classList.remove('closeFull');
-        // checkBox.classList.add('animations')
-    });
-})
 
 // #7.1 Close another windows
-    const closeFullBox = () => {
-        const checkBoxBefore = document.querySelectorAll('.check')
-        console.log('Close window before forEach');
-
-        checkBoxBefore.forEach((box)=>{
-            box.classList.remove('openFull');
-            box.classList.add('closeFull');
-        });
-    }
+   function closeBoxes(box) {
+    let checkBox = box.querySelector('.check')
+    console.log(checkBox);
+    checkBox.classList.toggle('openFull')
+    
+}
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
 // #8 - Hidden Btn - close window
 
-function closeBtn(){
-    console.log('pressed BTN')
-    closeFullBox();
+const closeBtn = () => {
+    // console.log('asd')
 }
 
-// make outsiede that window box
-window.addEventListener('click',function(e){
-    if(document.querySelectorAll('.box')){
-        console.log('close')
-    }else {
-        console.log('WTF')
-    }
-})
+    // ----- > close box <------
+//   const closeFullBox = () => {
+//         const checkBoxBefore = document.querySelectorAll('.check')
+//         console.log('Close window before forEach');
+
+//         checkBoxBefore.forEach((box)=>{
+//             box.classList.remove('openFull');
+//             box.classList.add('closeFull');
+//         });
+//    }
