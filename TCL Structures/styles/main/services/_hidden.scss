@@ -3,12 +3,13 @@
     z-index: 1;
 
     position: fixed;
-    top:20%;
-    left:20%;
-    width: 60%;
+    top:15%;
+    left:10%;
+    width: 80%;
     height: 75%;
 
     background-color: hsl(0 3.21% 9.74% / 88%);
+    border: 5px solid $thirdColor;
     color: white;
 // How to transition from hide to block divs
     transition-timing-function:ease-in-out;

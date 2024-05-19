@@ -144,11 +144,11 @@ closeBoxes(box);
 });
 
 
-// #7.1 Close another windows
+// #7.1 Close another windows - ** change to close windows by "X"
    function closeBoxes(box) {
     let checkBox = box.querySelector('.check')
     console.log(checkBox);
-    checkBox.classList.toggle('openFull')
+    // checkBox.classList.toggle('openFull') **
     
 }
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
@@ -158,14 +158,3 @@ closeBoxes(box);
 const closeBtn = () => {
     // console.log('asd')
 }
-
-    // ----- > close box <------
-//   const closeFullBox = () => {
-//         const checkBoxBefore = document.querySelectorAll('.check')
-//         console.log('Close window before forEach');
-
-//         checkBoxBefore.forEach((box)=>{
-//             box.classList.remove('openFull');
-//             box.classList.add('closeFull');
-//         });
-//    }
