@@ -158,3 +158,10 @@ closeBoxes(box);
 const closeBtn = () => {
     // console.log('asd')
 }
+
+// #8 Call Us BTN
+const btnCallUs = document.querySelector('#btn__callUs')
+
+btnCallUs.addEventListener('click',()=>{
+    document.querySelector('.main__contact__info__coworkers').scrollIntoView();
+})
