@@ -1,13 +1,13 @@
 // #1 Main__home Swap background image
 // #2 Main__about Swap manual images - main__about__imgs__swap
 // #3 Main__client Swap images - Main__client__img
-// #4 Header Sticky Bar
-// #5 Home - move to TOP
+// #4 Header Sticky Bar - stay after pass value
+// #5 Home - Press go / move to TOP
 // #6 Quote button in Header - move screen  to form
 // #7 Close another windows
     // #7.1 Close another windows
-// #8 Hidden BTN
-
+// #8 Hidden BTN - close window - optional
+// #9 PRess btn - move from services to contacts
 // #1 -------> Swap main__home background <---------
 let flag = false;
 
@@ -127,14 +127,8 @@ quoteBtn.addEventListener('click', (e)=>{
 
 // #7 - Open services windows - full open
 const pressBox = document.querySelectorAll('.box')
-
-pressBox.forEach((box)=>{
-
-//check if other is open??
-closeBoxes(box);
-
-
-
+    pressBox.forEach((box)=>{
+    closeBoxes(box);
 // Open window after press
     box.addEventListener('click',(e)=>{
         const showBox = box.querySelector('.check')
@@ -142,14 +136,13 @@ closeBoxes(box);
         showBox.classList.toggle('openFull')
     })
 });
-
+        //-----^-----^--
 
 // #7.1 Close another windows - ** change to close windows by "X"
-   function closeBoxes(box) {
+function closeBoxes(box) {
     let checkBox = box.querySelector('.check')
     console.log(checkBox);
-    // checkBox.classList.toggle('openFull') **
-    
+    // checkBox.classList.toggle('openFull') **   
 }
 // -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
@@ -158,10 +151,10 @@ closeBoxes(box);
 const closeBtn = () => {
     // console.log('asd')
 }
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----
 
-// #8 Call Us BTN
-const btnCallUs = document.querySelector('#btn__callUs')
-
-btnCallUs.addEventListener('click',()=>{
+// #9 - Call Us BTN
+document.querySelector('#btn__callUs').addEventListener('click',()=>{
     document.querySelector('.main__contact__info__coworkers').scrollIntoView();
 })
+// -^-----^-----^-----^-----^-----^-----^-----^-----^-----^-----

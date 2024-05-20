@@ -8,9 +8,10 @@
     width: 80%;
     height: 75%;
 
-    background-color: hsl(0 3.21% 9.74% / 88%);
+    background-color: hsl(0deg 4.1% 70.86% / 88%);
+    // background-color: hsl(0deg 3.17% 16% / 88%); other option
     border: 5px solid $thirdColor;
-    color: white;
+    color: black;
 // How to transition from hide to block divs
     transition-timing-function:ease-in-out;
 }
@@ -29,6 +30,12 @@
     transition: all 1s ease;
 }
 .hidden {
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
     p {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -46,7 +53,8 @@
     padding-top: 25px;
     // padding-left: 20px;
 
-    color: $secondColor;
+    color: black;
+    // color: $secondColor; other option
     font-size: 1.5rem;
     letter-spacing: 3px;
     
@@ -89,7 +97,8 @@
     }
 
     a {
-        color: $secondColor;
+        color: black;
+        // color: $secondColor;
         text-decoration: none;
         
         &:hover{
