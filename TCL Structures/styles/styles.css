@@ -154,7 +154,7 @@ strong {
   width: 50%;
   margin-left: 2rem;
 }
-.main__about__content h1 {
+.main__about__content h2 {
   margin-left: 3rem;
   font-size: 2rem;
   font-weight: 700;
@@ -170,7 +170,9 @@ strong {
   margin: 0;
   margin-left: 3rem;
   margin-right: 1rem;
-  font-size: 1.3rem;
+}
+.main__about__content__article p {
+  font-size: 1.5rem;
 }
 
 .main__about__imgs {
