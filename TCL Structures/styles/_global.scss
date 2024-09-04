@@ -6,9 +6,36 @@ body {
     margin:0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 //--> Sticky navigation for desktop version <---
 .sticky {
     position:fixed!important;
     top:0;
     width: 99%;
+}
+
+// fade in
+@keyframes fade-in {
+    from{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    1%{
+        visibility: visible;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        visibility: visible;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fade-in 900ms ease forwards;
 }

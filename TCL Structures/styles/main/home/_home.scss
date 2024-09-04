@@ -30,8 +30,8 @@
         border: 1px solid hsl(10, 6%, 21%);
 
         &__text{
-            margin-left:2rem;
-            margin-right: 2rem;
+            width: 100%;
+            display: flow;
             text-align: center;
             
             color: $secondColor;

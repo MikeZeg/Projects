@@ -5,9 +5,11 @@
 // #5 Home - Press go / move to TOP
 // #6 Quote button in Header - move screen  to form
 // #7 Close another windows
-    // #7.1 Close another windows
+//     #7.1 Close another windows
 // #8 Hidden BTN - close window - optional
 // #9 PRess btn - move from services to contacts
+
+
 // #1 -------> Swap main__home background <---------
 let flag = false;
 
@@ -96,9 +98,11 @@ const sticky = stickyNavBar.offsetTop;
 function myFun(){
     let ypos = window.scrollY;
     if(ypos > 120){
-        stickyNavBar.classList.add('sticky')
+        stickyNavBar.classList.add('fade-in');
+        stickyNavBar.classList.add('sticky');
     }else{
-        stickyNavBar.classList.remove('sticky')
+        stickyNavBar.classList.remove('sticky');
+        stickyNavBar.classList.remove('fade-in');
     }
 }
 window.addEventListener("scroll", myFun);

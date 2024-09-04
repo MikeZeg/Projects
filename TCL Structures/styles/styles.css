@@ -4,10 +4,36 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sticky {
   position: fixed !important;
   top: 0;
   width: 99%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 900ms ease forwards;
 }
 
 .header {
@@ -110,8 +136,8 @@ strong {
   border: 1px solid hsl(10, 6%, 21%);
 }
 .main__home__container__text {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 100%;
+  display: flow;
   text-align: center;
   color: hsl(0, 0%, 100%);
 }
