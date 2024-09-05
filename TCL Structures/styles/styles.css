@@ -26,6 +26,15 @@ html {
   line-height: 2rem;
 }
 
+.projects__spacing {
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.text__align__left {
+  text-align: left;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
