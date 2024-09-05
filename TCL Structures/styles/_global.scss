@@ -15,6 +15,15 @@ html {
     top:0;
     width: 99%;
 }
+.letter__spacing {
+    letter-spacing: 2px;
+}
+.extra__letter__spacing {
+    letter-spacing: 5px;
+}
+.line__height {
+    line-height: 2rem;
+}
 
 // fade in
 @keyframes fade-in {

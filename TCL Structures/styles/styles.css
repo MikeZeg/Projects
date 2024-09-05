@@ -14,6 +14,18 @@ html {
   width: 99%;
 }
 
+.letter__spacing {
+  letter-spacing: 2px;
+}
+
+.extra__letter__spacing {
+  letter-spacing: 5px;
+}
+
+.line__height {
+  line-height: 2rem;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -650,6 +662,7 @@ strong {
   font-weight: 500;
 }
 .main__contact__info .offices .office {
+  min-width: 300px;
   color: hsl(0, 0%, 100%);
   border: 1px solid white;
   background-color: rgb(53, 51, 51);
@@ -705,7 +718,7 @@ strong {
   left: 10%;
   width: 80%;
   height: 75%;
-  background-color: hsla(0, 4.1%, 70.86%, 0.88);
+  background-color: hsla(0, 4.1%, 70.86%, 0.95);
   border: 5px solid hsla(36, 68%, 51%, 0.997);
   color: black;
   transition-timing-function: ease-in-out;
