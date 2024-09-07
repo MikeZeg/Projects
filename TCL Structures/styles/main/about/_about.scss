@@ -52,7 +52,7 @@
         height: 95%;
         width: 80%;
 
-        background-image: url('../Images/TCL/Albrighton/about3.jpg');
+        background-image: url('../../../Images/about/about1.jpg');
         background-size: cover;
         border-radius: 15px;
     }
@@ -64,19 +64,5 @@
         color: blue;
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
-    }
-    .arrow {
-        height: 24px;
-        width: 24px;
-
-        border: solid white;
-        border-width: 0 5px 5px 0;
-        display: inline-block;
-        padding: 3px;
-
-    }
-    .arrow:hover {
-        border: solid black;
-        border-width: 0 5px 5px 0;
     }
 }

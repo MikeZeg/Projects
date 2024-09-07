@@ -35,6 +35,20 @@ html {
   text-align: left;
 }
 
+.arrow {
+  height: 24px;
+  width: 24px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow:hover {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -232,7 +246,7 @@ strong {
 .main__about__imgs__swap {
   height: 95%;
   width: 80%;
-  background-image: url("../Images/TCL/Albrighton/about3.jpg");
+  background-image: url("../../../Images/about/about1.jpg");
   background-size: cover;
   border-radius: 15px;
 }
@@ -244,18 +258,6 @@ strong {
   color: blue;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-.main__about__imgs .arrow {
-  height: 24px;
-  width: 24px;
-  border: solid white;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.main__about__imgs .arrow:hover {
-  border: solid black;
-  border-width: 0 5px 5px 0;
 }
 
 .main__services {
@@ -943,7 +945,7 @@ footer {
 }
 .project img {
   width: 100%;
-  height: 100%;
+  height: 550px;
   border-radius: 50px;
 }
 .project__desc {

@@ -7,8 +7,7 @@
 // #7 Close another windows
 //     #7.1 Close another windows
 // #8 Hidden BTN - close window - optional
-// #9 PRess btn - move from services to contacts
-
+// #9 Press btn - move from services to contacts
 
 // #1 -------> Swap main__home background <---------
 let flag = false;
@@ -45,6 +44,8 @@ rightArrow.addEventListener('click',()=>{
     imageNumber += 1;
     changeImageAbout();
 })
+
+// add interval to swap image
 
 const changeImageAbout = () => {
     
